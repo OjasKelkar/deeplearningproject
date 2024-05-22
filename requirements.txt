@@ -1,24 +1,8 @@
-from setuptools import find_packages,setup
+bentoml
+torchvison
+joblib
+tqdm
+pip-chill
+wincertstore
 
-def get_requirement(file_path:str)->List[str]:
-    requirements=[]
-    with open(file_path) as file_obj:
-        requirements=file_obj.readlines()
-        requirements=[req.replace("\n","") for req in requirementss]
-        
-        if HYPEN_E_DOT in requirements:
-            requirements.remove(HYPEN_E_DOT)
-            
-    return requirements
- 
-setup(
-    
-   name = "Xray",
-   version="0.0.1",
-   author="Ojas Kelkar"
-   author_email="kelkarork0308@gmail.com",
-   install_requires=[],
-   package=find_packages()
-    
-    
-)
+-e .
